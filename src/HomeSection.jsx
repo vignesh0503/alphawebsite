@@ -7,7 +7,7 @@ import { IoIosArrowForward, IoMdMail } from "react-icons/io";
 import { LuAlarmClock } from "react-icons/lu";
 import { GoShieldCheck } from "react-icons/go";
 import Experinceimg from "./assets/images/Exp.png";
-import experinceimg from "./assets/images/image.png";
+import experinceimg from "./assets/images/Image.png";
 import logoimage from "./assets/images/Mask group.png";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
