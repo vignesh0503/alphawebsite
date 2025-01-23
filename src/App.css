@@ -60,9 +60,6 @@
 
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: auto; */
-  /* height: 608px;/ */
-  /* width: 100%; */
 }
 .Hero-bg-color {
   /* background: linear-gradient( #FFFFFF00,#FFFFFF); */
@@ -70,18 +67,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%; */
-  /* width: auto; */
   height: 608px;
   padding: 0 60px;
-  /* position: relative; */
 }
-/* .Hero-Content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 0;
-} */
+
 .hero-content-left {
   display: flex;
   justify-content: center;
@@ -107,22 +96,15 @@
   font-size: 17px;
   font-weight: 400;
   line-height: 24px;
-  width: 440px;
+  font-size: 17px;
 }
 .Hero-Form {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   flex-direction: column;
-  /* background-color: #E6E9FC; */
+
   background-color: #ffffff;
   border-radius: 10px;
   padding: 30px;
-  /* height: 520px; */
-  /* width: 430px; */
-  /* position: absolute; */
-  top: 132px;
-  /* left: 890px; */
 }
 .Hero-Form-header {
   font-size: 36px;
@@ -153,7 +135,7 @@
 select {
   color: #727695;
 }
-.Getin-btn {
+.Hero-btn {
   margin-top: 30px;
   padding: 10px 30px;
   border-radius: 5px;
@@ -166,7 +148,7 @@ select {
   font-size: 13px;
   cursor: pointer;
 }
-.Getin-btn span {
+.Hero-btn span {
   margin-left: 10px;
   display: flex;
   align-items: center;
@@ -245,7 +227,8 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 60px;
+  padding: 60px 0px;
+  width: 100%;
 }
 
 .Training-Header h1 {
@@ -272,6 +255,7 @@ select {
   padding: 50px 20px 10px 20px;
   align-items: center;
   justify-content: center;
+  width: 80%;
 }
 .Training-card-content {
   border-radius: 10px;
@@ -280,11 +264,12 @@ select {
 }
 .Training-card-img {
   /* width: 300px; */
-  height: 200px;
+  height: 300px;
 }
 .cardimages {
   width: 100%;
   height: 100%;
+  /* object-fit: cover; */
   /* border-radius: 10px; */
 }
 .Training-Card-subcontent {
@@ -347,38 +332,62 @@ select {
 /* GET IN SECTION */
 
 .Get-In-Section {
-  display: flex;
-  justify-content: center;
-  /* width: 100%; */
-  padding: 60px;
-}
-.Get-In-Touch {
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 45% 40%;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+  gap: 60px;
+}
+
+.Get-Card-Img {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  gap: 120px;
 }
-.Get-In-Content {
+.Get-Card-Img img {
+  height: 554px;
+  width: 516px;
+  border-radius: 30px;
+}
+.Get-Card-Contents {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Get-Card-Content {
+  height: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Get-In-Content h2 {
+.Get-Card-Content h2 {
   font-size: 42px;
   font-weight: 500;
   line-height: 52px;
   margin-bottom: 20px;
 }
-.Get-In-Content h3 {
+.Get-Card-Content h3 {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   margin-bottom: 20px;
   width: 520px;
 }
+.Get-SubContent {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-items: center; */
+}
+
 .Get-SubContent p {
   display: flex;
   align-items: center;
@@ -394,7 +403,24 @@ select {
   color: #0970a7;
   margin-right: 10px;
 }
-
+.Getin-btn {
+  margin-top: 30px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0970a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+}
+.Getin-btn span {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
 /* Experience section */
 
 .Experience-section {
@@ -491,13 +517,21 @@ select {
   font-weight: 400;
 }
 .Do-Form-Form {
-  display: grid;
-  grid-template-columns: 42% 42%;
-  /* display: flex; */
-  gap: 20px;
+  display: flex;
+  /* width: 100%; */
+  flex-direction: column;
+  /* gap: 20px; */
   justify-content: center;
   align-items: center;
   margin: 30px;
+}
+.Form-Do {
+  display: grid;
+  grid-template-columns: 42% 42%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
 }
 .Do-Form-Form input,
 select {
@@ -536,8 +570,9 @@ select {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  width: 217px;
-  height: 59px;
+  /* width: 217px;
+  height: 59px; */
+  padding: 15px 30px;
   border-radius: 6px;
   cursor: pointer;
   font-family: "Roboto";
@@ -626,238 +661,603 @@ select {
 /* Media Query */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .logo img {
-    height: 50px;
-  }
-
   /* Hero Section */
 
-  .Hero-header1 {
-    width: 100%;
-  }
-  .Hero-header2 {
-    width: 100%;
-  }
-  .Hero-para {
-    width: 100%;
+  .Hero-bg-color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 608px;
+    padding: 0 60px;
   }
 
+  .hero-content-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Hero-header1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 47.5px;
+    width: 277px;
+  }
+  .Hero-header2 {
+    font-size: 42px;
+    line-height: 47.5px;
+    width: 420px;
+  }
+  .Hero-para {
+    font-size: 17px;
+    font-size: 17px;
+  }
+  .Hero-Form {
+    display: flex;
+    flex-direction: column;
+  }
   .Hero-Form-header {
-    font-size: 28px;
-    line-height: 15px;
-    text-align: center;
-    margin-bottom: 15px;
+    font-size: 36px;
+    margin-bottom: 10px;
   }
   .Hero-Form-para {
     font-size: 18px;
-    line-height: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
   .Getin-btn {
     padding: 10px 30px;
+    font-size: 13px;
   }
 
-  /* ABOUT-SECTION */
-
-  .about-header {
-    font-size: 28px;
-    font-weight: 500;
+  /* About Section */
+  .About-section {
+    margin-top: 60px;
+    padding: 60px 20px;
   }
-  .about-para {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-  }
-  .about-card {
-    margin-top: 20px;
-    grid-template-columns: auto auto auto;
-    /* gap: 5px; */
-    width: 100%;
-  }
-
-  /* OUT TRANING SECTION */
-
-  .our-training-header {
-    font-size: 24px;
-  }
-  .our-training-para {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 15px;
-  }
-
-  .Start-btn {
-    font-size: 12px;
-  }
-  .Start-btn span {
-    margin-left: 10px;
-  }
-  .card {
-    grid-template-columns: auto auto auto;
-  }
-
-  /* GET IN SECTION */
-
-  .getin-img {
-    height: 500px;
-    width: 550px;
-  }
-
-  .getin-content {
-    padding-left: 0px;
-    margin-top: 20px;
-  }
-  .getin-content h1 {
-    font-size: 22px;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .getin-content p {
-    font-size: 18px;
-    text-align: center;
-    line-height: 20px;
+  .About-section-header h1 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 600;
     margin-bottom: 20px;
   }
-  .getin-subcontent {
+  .About-section-header p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 800px;
+  }
+  .About-Card-Section {
+    margin-top: 30px;
+  }
+  .About-Card-Content {
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+  }
+
+  .About-Card img {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .About-Card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .About-Card p {
+    font-size: 16px;
+  }
+
+  /* Our Training Section */
+
+  .Training-Section {
+    background: linear-gradient(#0970a7, #85c9ed);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 60px 0px;
+    width: 100%;
   }
-
-  /* Experience section */
-
-  .Do-Form-Form {
-    grid-template-columns: 35% 35%;
-  }
-
-  .Footer-content {
+  .Training-Card {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 20px;
+    padding: 50px 20px 10px 20px;
+    align-items: center;
     justify-content: center;
+    width: 90%;
+  }
+  .Training-Header h1 {
+    font-size: 32px;
+  }
+
+  .Training-Header p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 620px;
+  }
+
+  .Training-Card-subcontent h3 {
+    font-size: 20px;
+  }
+
+  .Training-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Start-btn {
+    padding: 10px;
+  }
+
+  /* Get In Section */
+
+  .Get-In-Section {
+    background-color: #ffffff;
+    display: grid;
+    /* grid-template-columns: 40% 35%; */
+    justify-content: center;
+    padding: 40px 0px;
+    gap: 60px;
+  }
+  .Get-Card-Img {
+    height: 100%;
+    width: 100%;
+  }
+  .Get-Card-Img img {
+    height: 400px;
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .Get-Card-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Get-Card-Content h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .Get-Card-Content h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .Get-SubContent {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .Get-SubContent p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  .Get-SubContent p span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0970a7;
+    margin-right: 10px;
+  }
+
+  /* Experience Section */
+
+  .Experience-Bg {
+    display: flex;
+    height: auto;
+  }
+  .Experience-SubContent {
+    width: 100%;
+    padding: 20px 20px;
+  }
+  .Experience-SubContent h1 {
+    font-size: 20px;
+    /* text-align: center; */
+    width: 100%;
+    line-height: 20px;
+  }
+  .Experience-SubContent p {
+    font-size: 13px;
+    margin-top: 20px;
+    /* text-align: center; */
+    width: 100%;
+    line-height: 20px;
+  }
+
+  /* What Can I Do For Us */
+  .Do-for-Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Do-For-Content h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .Do-For-Content p {
+    width: 100%;
+    font-size: 13px;
+  }
+  .Do-Form-Form {
+    grid-template-columns: 1fr;
+  }
+
+  .Form-Do {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .Do-Form-Form input,
+  select {
+    padding: 12px 12px;
+  }
+  .Do-Form-Form select {
+    font-size: 14px;
+  }
+  .Do-Form-Form input::placeholder {
+    font-size: 14px;
+  }
+  .Do-Forbtn {
+    margin-top: 20px;
+  }
+  .Do-For-btn {
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  /* Footer */
+
+  .Footer-section {
+    padding: 20px;
+  }
+
+  .Footer-logo {
+    height: 50px;
+    width: 120px;
+  }
+  .Footerpara {
+    width: 100%;
+  }
+
+  .Footer-icon p {
+    font-size: 20px !important;
+  }
+
+  .FooterSubcontent p span {
+    font-size: 20px;
+  }
+  .Footer-Address {
+    width: 100%;
+  }
+  .CopyRights-Footer {
+    background-color: #0970a7;
+    color: #ffffff;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .CopyRights-Footer p {
+    font-size: 14px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .logo img {
-    height: 40px;
-  }
-
   /* Hero Section */
 
+  .Hero-bg-color {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 0px; */
+  }
+
+  .hero-content-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+  }
   .Hero-header1 {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
     width: 100%;
   }
   .Hero-header2 {
+    font-size: 24px;
+    line-height: 30px;
     width: 100%;
+    text-align: center;
   }
   .Hero-para {
+    font-size: 16px;
+    text-align: center;
     width: 100%;
   }
-
-  .Hero-Form-header {
-    font-size: 26px;
-    line-height: 15px;
+  .Hero-Form {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
     text-align: center;
-    margin-bottom: 15px;
+  }
+  .Hero-Form-header {
+    font-size: 20px;
+    margin-bottom: 0px;
   }
   .Hero-Form-para {
-    font-size: 16px;
-    line-height: 15px;
-    margin-bottom: 15px;
+    font-size: 10px;
+    margin-bottom: 20px;
   }
 
-  .Getin-btn {
+  .Hero-btn {
     padding: 10px 15px;
-  }
-
-  /* ABOUT-SECTION */
-
-  .about-header {
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .about-para {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 15px;
-  }
-  .about-card {
-    grid-template-columns: auto auto;
-    /* gap: 5px; */
-    width: 100%;
-  }
-  /* .abt-card {
-    /* gap: 5px;
-    width: 100%; */
-  /* }  */
-
-  /* OUT TRANING SECTION */
-
-  .our-training-header {
-    font-size: 24px;
-  }
-  .our-training-para {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 15px;
-  }
-
-  .Start-btn {
     font-size: 12px;
   }
-  .Start-btn span {
-    margin-left: 10px;
+
+  /* About Section */
+  .About-section {
+    margin-top: 60px;
+    padding: 60px 20px;
   }
-  .card {
-    grid-template-columns: auto auto;
+  .About-section-header h1 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .About-section-header p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
+  }
+  .About-Card-Section {
+    margin-top: 30px;
+  }
+  .About-Card-Content {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .About-Card {
+    text-align: center;
+  }
+  .About-Card img {
+    padding: 15px;
+    margin-bottom: 0px;
+  }
+  .About-Card h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .About-Card p {
+    font-size: 12px;
   }
 
-  /* GET IN SECTION */
+  /* Our Training Section */
 
-  .getin-section {
-    flex-direction: column;
+  .Training-Section {
+    padding: 0px;
   }
-  .getin-img {
-    height: 500px;
+
+  .Training-Header h1 {
+    font-size: 17px;
+  }
+
+  .Training-Header p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
     width: 550px;
   }
 
-  .getin-content {
-    padding-left: 0px;
-    margin-top: 20px;
+  .Training-Card {
+    grid-template-columns: auto auto;
   }
-  .getin-content h1 {
-    font-size: 22px;
+
+  .Training-Card-subcontent h3 {
+    font-size: 13px;
+  }
+
+  .Training-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Start-btn {
+    padding: 5px 10px 5px 10px;
+  }
+
+  /* Get In Section */
+
+  .Get-In-Section {
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+  .Get-Card-Img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Get-Card-Img img {
+    height: 350px;
+    width: 516px;
+    border-radius: 30px;
+  }
+  .Get-Card-Content {
+    height: auto;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Get-Card-Content h2 {
+    font-size: 24px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 10px;
+    line-height: 20px;
   }
-  .getin-content p {
-    font-size: 18px;
+  .Get-Card-Content h3 {
+    font-size: 16px;
     text-align: center;
     line-height: 20px;
     margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
   }
-  .getin-subcontent {
+
+  .Get-SubContent p {
+    font-size: 16px;
+    line-height: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+  .Get-SubContent p span {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0970a7;
+    margin-right: 10px;
+  }
+  .Get-Btn {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  /* Experience section */
+  /* Experience Section */
 
-  .Do-Form-Form {
-    grid-template-columns: auto auto;
+  .Experience-Bg {
+    display: flex;
+    height: auto;
+  }
+  .Experience-SubContent {
+    width: 100%;
+    padding: 20px 20px;
+  }
+  .Experience-SubContent h1 {
+    font-size: 20px;
+    /* text-align: center; */
+    width: 100%;
+    line-height: 20px;
+  }
+  .Experience-SubContent p {
+    font-size: 13px;
+    margin-top: 20px;
+    /* text-align: center; */
+    width: 100%;
+    line-height: 20px;
   }
 
-  .Footer-content {
+  /* What Can I Do For Us */
+  .Do-for-Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Do-For-Content h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .Do-For-Content p {
+    width: 100%;
+    font-size: 13px;
+  }
+  .Do-Form-Form {
+    grid-template-columns: 1fr;
+  }
+
+  .Form-Do {
     display: grid;
-    grid-template-columns: auto;
-    justify-content: start;
+    grid-template-columns: 1fr;
+  }
+  .Do-Form-Form input,
+  select {
+    padding: 12px 12px;
+  }
+  .Do-Form-Form select {
+    font-size: 14px;
+  }
+  .Do-Form-Form input::placeholder {
+    font-size: 14px;
+  }
+  .Do-Forbtn {
+    margin-top: 20px;
+  }
+  .Do-For-btn {
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  /* Footer */
+
+  .Footer-section {
+    padding: 20px;
+  }
+  .Footer-Content {
+    flex-direction: column;
+  }
+  .Footer-logo {
+    height: 50px;
+    width: 120px;
+  }
+  .Footerpara {
+    width: 100%;
+  }
+
+  .Footer-icon p {
+    font-size: 20px !important;
+  }
+
+  .FooterSubcontent p span {
+    font-size: 20px;
+  }
+  .Footer-Address {
+    width: 100%;
+  }
+  .CopyRights-Footer {
+    background-color: #0970a7;
+    color: #ffffff;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .CopyRights-Footer p {
+    font-size: 14px;
   }
 }
 
@@ -869,6 +1269,9 @@ select {
   .checkbtn {
     display: block;
     order: 1;
+  }
+  .navbar {
+    padding: 24px;
   }
   .nav-ul {
     display: none;
@@ -883,6 +1286,7 @@ select {
     /* background-color: #0970a7; */
     background-color: #ffffff;
     color: #000000;
+    transition: 0.5s;
   }
   .nav-ul li {
     margin: 20px 0;
@@ -909,32 +1313,36 @@ select {
 
   /* Hero Section */
 
-  .Hero-Content {
+  .Hero-bg-color {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column;
+    /* padding: 0px; */
   }
+
   .hero-content-left {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-top: 30px;
   }
   .Hero-header1 {
     font-size: 20px;
     line-height: 30px;
     text-align: center;
+    width: 100%;
   }
   .Hero-header2 {
     font-size: 20px;
     line-height: 30px;
+    width: 100%;
+    text-align: center;
   }
   .Hero-para {
     font-size: 14px;
     text-align: center;
+    width: 100%;
   }
   .Hero-Form {
     width: 100%;
@@ -942,93 +1350,143 @@ select {
     margin-top: 20px;
   }
   .Hero-Form-header {
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 0px;
   }
   .Hero-Form-para {
-    font-size: 14px;
+    font-size: 10px;
+    margin-bottom: 20px;
   }
 
-  .Getin-btn {
+  .Hero-btn {
     padding: 10px 15px;
     font-size: 12px;
   }
 
   /* About Section */
-
-  .about-header {
-    font-size: 22px;
-    font-weight: 500;
+  .About-section {
+    margin-top: 60px;
+    padding: 60px 20px;
   }
-  .about-para {
-    font-size: 14px;
+  .About-section-header h1 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .About-section-header p {
+    font-size: 13px;
     font-weight: 400;
-    line-height: 15px;
+    line-height: 20px;
+    width: 100%;
   }
-  .about-card {
+  .About-Card-Section {
+    margin-top: 30px;
+  }
+  .About-Card-Content {
     grid-template-columns: 1fr;
-    /* gap: 5px; */
-    /* width: 100%; */
-    margin-top: 20px;
+    padding: 20px;
+  }
+  .About-Card {
+    text-align: center;
+  }
+  .About-Card img {
+    padding: 15px;
+    margin-bottom: 0px;
+  }
+  .About-Card h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .About-Card p {
+    font-size: 12px;
   }
 
   /* Our Training Section */
 
-  .our-training-header {
-    font-size: 21px;
-  }
-  .our-training-para {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 15px;
+  .Training-Section {
+    padding: 0px;
   }
 
-  .Start-btn {
-    font-size: 12px;
+  .Training-Header h1 {
+    font-size: 17px;
   }
-  .Start-btn span {
-    margin-left: 10px;
+
+  .Training-Header p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
   }
-  .card {
+
+  .Training-Card {
     grid-template-columns: 1fr;
+  }
+
+  .Training-Card-subcontent h3 {
+    font-size: 13px;
+  }
+
+  .Training-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Start-btn {
+    padding: 5px 10px 5px 10px;
   }
 
   /* Get In Section */
 
-  .getin-section {
-    flex-direction: column;
+  .Get-In-Section {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
-  .getin-img {
+  .Get-Card-Img img {
+    height: 300px;
+    width: 316px;
+    border-radius: 30px;
+  }
+  .Get-Card-Content {
     height: auto;
-    width: 100%;
   }
-
-  .getin-content {
-    padding-left: 0px;
-    margin-top: 20px;
-  }
-  .getin-content h1 {
+  .Get-Card-Content h2 {
     font-size: 20px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 10px;
+    line-height: 20px;
   }
-  .getin-content p {
-    font-size: 16px;
+  .Get-Card-Content h3 {
+    font-size: 13px;
     text-align: center;
     line-height: 20px;
     margin-bottom: 20px;
+    width: 100%;
   }
-  .getin-subcontent p {
-    font-size: 14px;
+  .Get-SubContent p {
+    font-size: 12px;
     text-align: start;
+    line-height: 15px;
+    width: 100%;
+    justify-content: center;
   }
-  .getin-subcontent p span {
+  .Get-SubContent p span {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #0970a7;
     margin-right: 10px;
   }
+  .Get-Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Experience Section */
 
   .Experience-Bg {
     display: flex;
@@ -1042,13 +1500,17 @@ select {
     padding: 20px 0px;
   }
   .Experience-SubContent h1 {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
+    width: 100%;
+    line-height: 20px;
   }
   .Experience-SubContent p {
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 20px;
     text-align: center;
+    width: 100%;
+    line-height: 20px;
   }
   .Experience-img {
     width: 100%;
@@ -1066,6 +1528,7 @@ select {
     border-radius: 20px;
   }
 
+  /* What Can I Do For Us */
   .Do-for-Header {
     display: flex;
     flex-direction: column;
@@ -1075,48 +1538,78 @@ select {
   .Do-For-Content h1 {
     text-align: center;
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 20px;
   }
   .Do-For-Content p {
     width: 100%;
-    font-size: 16px;
+    font-size: 13px;
   }
   .Do-Form-Form {
     grid-template-columns: 1fr;
   }
 
-  .Footer-content {
+  .Form-Do {
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: start;
+  }
+  .Do-Form-Form input,
+  select {
+    padding: 12px 12px;
+  }
+  .Do-Form-Form select {
+    font-size: 14px;
+  }
+  .Do-Form-Form input::placeholder {
+    font-size: 14px;
+  }
+  .Do-Forbtn {
+    margin-top: 20px;
+  }
+  .Do-For-btn {
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 10px;
   }
 
+  /* Footer */
+
+  .Footer-section {
+    padding: 20px;
+  }
+  .Footer-Content {
+    flex-direction: column;
+  }
+  .Footer-logo {
+    height: 50px;
+    width: 120px;
+  }
   .Footerpara {
-    font-size: 14px;
-    margin-bottom: 10px;
-    font-weight: 300;
     width: 100%;
   }
 
   .Footer-icon p {
+    font-size: 20px !important;
+  }
+
+  .FooterSubcontent p span {
+    font-size: 20px;
+  }
+  .Footer-Address {
+    width: 100%;
+  }
+  .CopyRights-Footer {
+    background-color: #0970a7;
     color: #ffffff;
-    margin-right: 10px;
-  }
-  .FooterSubcontent h3 {
-    margin-bottom: 10px;
+    text-align: center;
+    height: 100px;
     display: flex;
-    align-items: center;
-
-    justify-content: start;
-    font-size: 15px;
-    font-weight: 300;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
   }
-  .FooterSubcontent span {
-    margin-left: 10px;
-  }
-
-  .horisontal-line {
-    width: auto;
-    margin-bottom: 20px;
+  .CopyRights-Footer p {
+    font-size: 14px;
   }
 }

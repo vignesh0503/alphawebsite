@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import { FaArrowRight, FaLocationDot, FaPhone } from "react-icons/fa6";
 import Heartimg from "./assets/images/Heart.png";
-import GetinTouchimg from "./assets/images/Rectangle 631.png";
+// import GetinTouchimg from "./assets/images/Rectangle 631 .png";
+import GetinTouchimg from "./assets/images/cart-img.jpeg";
 import cardimg from "./assets/images/education.png";
 import { IoIosArrowForward, IoMdMail } from "react-icons/io";
-import { LuAlarmClock } from "react-icons/lu";
 import { GoShieldCheck } from "react-icons/go";
 import Experinceimg from "./assets/images/Exp.png";
 import experinceimg from "./assets/images/Image.png";
@@ -54,7 +54,7 @@ const HomeSection = () => {
               Your Gateway to Expert Training and Reliable Coding Solutions
             </p>
           </div>
-          <div className="Hero-Form">
+          <form className="Hero-Form">
             <h1 className="Hero-Form-header">We're here to help!</h1>
             <p className="Hero-Form-para">
               Please contact us in case of any query.
@@ -82,11 +82,11 @@ const HomeSection = () => {
             </select>
 
             <div>
-              <button className="Getin-btn">
+              <button className="Hero-btn">
                 Get in Touch <span>{<FaArrowRight />}</span>
               </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
 
@@ -174,12 +174,13 @@ const HomeSection = () => {
       </div>
 
       {/* Get in Touch */}
+
       <div className="Get-In-Section">
-        <div className="Get-In-Touch">
-          <div className="Get-Card-img">
-            <img src={GetinTouchimg} alt="" />
-          </div>
-          <div className="Get-In-Content">
+        <div className="Get-Card-Img">
+          <img src={GetinTouchimg} alt="" />
+        </div>
+        <div className="Get-Card-Contents">
+          <div className="Get-Card-Content">
             <h2>Lorem ipsum dolor sit amet consectetura</h2>
             <h3>
               Lorem ipsum dolor sit amet consectetur. Lacus at pellentesque in
@@ -211,7 +212,7 @@ const HomeSection = () => {
                 Lorem ipsum dolor sit amet consectetur
               </p>
 
-              <div>
+              <div className="Get-Btn">
                 <button className="Getin-btn">
                   Get in Touch <span>{<FaArrowRight />}</span>
                 </button>
@@ -253,25 +254,24 @@ const HomeSection = () => {
               commercial or residential.
             </p>
           </div>
-          <div className="Do-Form-Form">
-            <input type="text" placeholder="Your Name" />
-
-            <input type="email" placeholder="Your Email address" />
-
-            <input type="number" placeholder="Your phone number" />
-
-            <select>
-              <option value="Select Course">Select Course</option>
-              <option value="Html">Html</option>
-              <option value="Css">Css</option>
-              <option value="Java Script">Java Script</option>
-            </select>
-          </div>
-          <div className="Do-Forbtn">
-            <button className="Do-For-btn">
-              Get in Touch <span>{<FaArrowRight />}</span>
-            </button>
-          </div>
+          <form className="Do-Form-Form">
+            <div className="Form-Do">
+              <input type="text" placeholder="Your Name" />
+              <input type="email" placeholder="Your Email address" />
+              <input type="number" placeholder="Your phone number" />
+              <select>
+                <option value="Select Course">Select Course</option>
+                <option value="Html">Html</option>
+                <option value="Css">Css</option>
+                <option value="Java Script">Java Script</option>
+              </select>
+            </div>
+            <div className="Do-Forbtn">
+              <button className="Do-For-btn">
+                Get in Touch <span>{<FaArrowRight />}</span>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
 
