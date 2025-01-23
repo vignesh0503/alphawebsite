@@ -23,6 +23,7 @@
 }
 .nav-ul {
   list-style-type: none;
+  display: flex;
 }
 
 .nav-ul li a {
@@ -33,7 +34,7 @@
   font-weight: 400;
   line-height: 30px;
 }
-.nav-ul li a:first-child {
+.nav-ul li .active {
   color: #0970a7;
 }
 

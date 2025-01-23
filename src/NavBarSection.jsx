@@ -19,9 +19,11 @@ const NavBarSection = () => {
           <FaTimes className="x-icon" />
         </label>
 
-        <ul className="nav-ul">
+        <ul className="nav-ul ">
           <li>
-            <Link to={"/"}>Home</Link>
+            <Link className="active" to={"/"}>
+              Home
+            </Link>
           </li>
           <li>
             <Link to={"/about"}>About</Link>
