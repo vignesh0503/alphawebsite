@@ -235,7 +235,12 @@ select {
   padding: 20px 0px;
   width: 100%;
 }
-
+.Training-Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .Training-Header h1 {
   font-size: 32px;
   font-weight: 500;
@@ -1430,7 +1435,7 @@ select {
     font-size: 13px;
     font-weight: 400;
     line-height: 20px;
-    width: 100%;
+    width: 90%;
   }
 
   .Training-Card {
