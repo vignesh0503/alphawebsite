@@ -1379,7 +1379,7 @@ select {
   }
   .About-Card-Content {
     grid-template-columns: 1fr;
-    padding: 20px;
+    /* padding: 20px; */
   }
   .About-Card {
     text-align: center;
