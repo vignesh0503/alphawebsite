@@ -1385,6 +1385,9 @@ select {
     text-align: center;
     margin-top: 30px;
   }
+  .About-Card p {
+    width: 100%;
+  }
   .About-Card img {
     padding: 15px;
     margin-bottom: 0px;
