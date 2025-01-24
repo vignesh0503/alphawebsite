@@ -1587,7 +1587,7 @@ select {
     grid-template-columns: auto auto;
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     padding: 40px 10px;
   }
 
@@ -1602,7 +1602,9 @@ select {
   .Footer-icon p {
     font-size: 20px !important;
   }
-
+  .FooterSubcontent {
+    align-items: center;
+  }
   .FooterSubcontent p span {
     font-size: 20px;
   }

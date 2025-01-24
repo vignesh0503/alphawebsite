@@ -52,6 +52,7 @@ const HomeSection = () => {
               Your Gateway to Expert Training and Reliable Coding Solutions
             </p>
           </div>
+
           <form className="Hero-Form">
             <h1 className="Hero-Form-header">We're here to help!</h1>
             <p className="Hero-Form-para">
