@@ -1584,12 +1584,11 @@ select {
   }
 
   .Footer-Content {
-    display: grid;
     grid-template-columns: auto auto;
-    gap: 60px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    padding: 40px 10px;
   }
 
   .Footer-logo {
