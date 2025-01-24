@@ -284,19 +284,47 @@ const HomeSection = () => {
               <p>{<FaInstagram />}</p>
             </div>
           </div>
-          <div className="FooterSubcontent">
-            <h1>Links</h1>
-            <p>Home</p>
-            <p>About </p>
-            <p>Services</p>
-            <p>Courses</p>
-            <p> Contact</p>
+          <div className="Footer-details-for-lapview">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                gap: "40px",
+              }}
+            >
+              <div className="FooterSubcontent">
+                <h1>Links</h1>
+                <p>Home</p>
+                <p>About </p>
+                <p>Services</p>
+                <p>Courses</p>
+                <p> Contact</p>
+              </div>
+              <div className="FooterSubcontent">
+                <h1>Courses</h1>
+                <p>AR Caller </p>
+                <p>Medical Billing</p>
+                <p>Medical Coding</p>
+              </div>
+            </div>
           </div>
-          <div className="FooterSubcontent">
-            <h1>Courses</h1>
-            <p>AR Caller </p>
-            <p>Medical Billing</p>
-            <p>Medical Coding</p>
+          <div className="Footer-details">
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <div className="FooterSubcontent">
+                <h1>Links</h1>
+                <p>Home</p>
+                <p>About </p>
+                <p>Services</p>
+                <p>Courses</p>
+                <p> Contact</p>
+              </div>
+              <div className="FooterSubcontent">
+                <h1>Courses</h1>
+                <p>AR Caller </p>
+                <p>Medical Billing</p>
+                <p>Medical Coding</p>
+              </div>
+            </div>
           </div>
           <div className="FooterSubcontent">
             <h1>Contact</h1>

@@ -646,6 +646,12 @@ select {
   font-size: 24px;
   margin-right: 10px;
 }
+.Footer-details-for-lapview {
+  display: block;
+}
+.Footer-details {
+  display: none;
+}
 .Footer-Address {
   display: flex;
 
@@ -935,7 +941,12 @@ select {
   .Footerpara {
     width: 100%;
   }
-
+  .Footer-details-for-lapview {
+    display: block;
+  }
+  .Footer-details {
+    display: none;
+  }
   .Footer-icon p {
     font-size: 20px !important;
   }
@@ -1217,6 +1228,7 @@ select {
     padding: 40px 20px;
     grid-template-columns: 45% 30%;
   }
+
   .Footer-logo {
     height: 50px;
     width: 120px;
@@ -1224,7 +1236,12 @@ select {
   .Footerpara {
     width: 100%;
   }
-
+  .Footer-details-for-lapview {
+    display: none;
+  }
+  .Footer-details {
+    display: block;
+  }
   .Footer-icon p {
     font-size: 20px !important;
   }
@@ -1311,36 +1328,38 @@ select {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* padding: 20px 40px 40px 40px; */
+    padding: 40px 20px;
   }
 
   .Hero-Content-Left {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: start;
     width: 100%;
   }
   .Hero-header1 {
     font-size: 20px;
     line-height: 30px;
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
   }
   .Hero-header2 {
     font-size: 20px;
     line-height: 30px;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
   }
   .Hero-para {
     font-size: 14px;
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
   }
   .Hero-Form {
     width: 100%;
     padding: 10px;
     margin-top: 20px;
+    text-align: center;
   }
   .Hero-Form-header {
     font-size: 20px;
@@ -1360,7 +1379,7 @@ select {
   /* ABOUT SECTION */
 
   .About-section {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
   .About-section-header h1 {
     font-size: 24px;
@@ -1379,11 +1398,12 @@ select {
   }
   .About-Card-Content {
     grid-template-columns: 1fr;
-    /* padding: 20px; */
+    padding: 0px;
+    gap: 30px;
   }
   .About-Card {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0px;
   }
   .About-Card p {
     width: 100%;
@@ -1402,10 +1422,6 @@ select {
 
   /* OUR TRAINING SECTION */
 
-  .Training-Section {
-    padding: 0px;
-  }
-
   .Training-Header h1 {
     font-size: 17px;
   }
@@ -1415,18 +1431,18 @@ select {
     font-weight: 400;
     line-height: 20px;
     width: 100%;
-    max-width: 350px;
   }
 
   .Training-Card {
     grid-template-columns: 1fr;
+    padding: 20px 0px;
   }
 
   .Training-Card-subcontent h3 {
     font-size: 13px;
   }
   .Training-card-img {
-    /* width: 300px; */
+    /* width: 100%; */
     height: 200px;
   }
   .Training-card-footer {
@@ -1445,10 +1461,11 @@ select {
   .Get-In-Section {
     grid-template-columns: 1fr;
     gap: 20px;
+    padding: 20px;
   }
   .Get-Card-Img img {
-    height: 300px;
-    width: 316px;
+    height: 100%;
+    width: 100%;
     border-radius: 30px;
   }
   .Get-Card-Content {
@@ -1457,13 +1474,13 @@ select {
   .Get-Card-Content h2 {
     font-size: 20px;
     font-weight: 500;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 10px;
     line-height: 20px;
   }
   .Get-Card-Content h3 {
     font-size: 13px;
-    text-align: center;
+    /* text-align: center; */
     line-height: 20px;
     margin-bottom: 20px;
     width: 100%;
@@ -1473,7 +1490,7 @@ select {
     text-align: start;
     line-height: 15px;
     width: 100%;
-    justify-content: center;
+    /* justify-content: center; */
   }
   .Get-SubContent p span {
     display: flex;
@@ -1484,8 +1501,11 @@ select {
   }
   .Get-Btn {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+  }
+  .Getin-btn {
+    margin-top: 10px;
   }
 
   /* EXPERIENCE SECTION */
@@ -1503,14 +1523,14 @@ select {
   }
   .Experience-SubContent h1 {
     font-size: 20px;
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
     line-height: 20px;
   }
   .Experience-SubContent p {
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 20px;
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
     line-height: 20px;
   }
@@ -1538,6 +1558,9 @@ select {
     align-items: center;
     justify-content: center;
   }
+  .Do-For-Content {
+    padding: 20px;
+  }
   .Do-For-Content h1 {
     text-align: center;
     margin-bottom: 15px;
@@ -1549,12 +1572,13 @@ select {
     font-size: 13px;
   }
   .Do-Form-Form {
-    grid-template-columns: 1fr;
+    margin: 0px;
   }
-
   .Form-Do {
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0px;
   }
   .Do-Form-Form input,
   select {
@@ -1578,15 +1602,19 @@ select {
 
   /* FOOTER */
 
-  .Footer-section {
-    height: auto;
-  }
-
   .Footer-Content {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     gap: 20px;
     justify-content: center;
-    padding: 40px 10px;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .Footer-details-for-lapview {
+    display: none;
+  }
+  .Footer-details {
+    display: block;
   }
 
   .Footer-logo {
@@ -1603,6 +1631,7 @@ select {
 
   .FooterSubcontent p {
     font-size: 12px;
+    width: 100%;
   }
   .FooterSubcontent p span {
     font-size: 20px;
