@@ -13,8 +13,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { IoLocationOutline } from "react-icons/io5";
-import { CiMail, CiPhone } from "react-icons/ci";
 import { PiAlarm } from "react-icons/pi";
 
 const HomeSection = () => {
@@ -332,10 +330,7 @@ const HomeSection = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="CopyRights-Footer">
-        <hr />
-        <div>
+        <div className="Copyrights-Footer">
           <p>© 2025alphahealthcare.com</p>
         </div>
       </div>

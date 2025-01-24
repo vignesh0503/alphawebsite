@@ -102,6 +102,7 @@
   font-weight: 400;
   line-height: 24px;
   font-size: 17px;
+  width: 440px;
 }
 .Hero-Form {
   display: flex;
@@ -270,7 +271,7 @@ select {
 }
 .Training-card-img {
   /* width: 300px; */
-  height: 300px;
+  height: 200px;
 }
 .cardimages {
   width: 100%;
@@ -598,15 +599,17 @@ select {
 .Footer-section {
   background-color: #0970a7;
   color: #ffffff;
-  height: auto;
-  padding: 60px 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .Footer-Content {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   gap: 60px;
+  justify-content: center;
+  padding: 60px 80px 30px 80px;
 }
 .Footer-logo {
   height: 50px;
@@ -618,15 +621,17 @@ select {
   font-weight: 400;
   color: #dddddd;
   width: 534px;
-  /* margin-top: 20px; */
 }
 .Footer-icon {
   display: flex;
-  /* margin-top: 20px; */
+  width: 142px;
 }
+
 .Footer-icon p {
   margin-right: 15px;
-  font-size: 24px !important;
+  font-size: 20px !important;
+  height: 24px !important;
+  width: 24px !important;
 }
 .FooterSubcontent {
   display: flex;
@@ -650,21 +655,18 @@ select {
 }
 .Footer-Address {
   display: flex;
-  /* justify-content: center; */
+
   align-items: center;
   width: 250px;
 }
-.CopyRights-Footer {
-  background-color: #0970a7;
-  color: #ffffff;
+.Copyrights-Footer {
+  border-top: 2px solid white;
+  width: 100%;
   text-align: center;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
 }
-
+.Copyrights-Footer p {
+  padding: 30px;
+}
 /* Media Query */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -932,10 +934,6 @@ select {
 
   /* Footer */
 
-  .Footer-section {
-    padding: 20px;
-  }
-
   .Footer-logo {
     height: 50px;
     width: 120px;
@@ -954,16 +952,7 @@ select {
   .Footer-Address {
     width: 100%;
   }
-  .CopyRights-Footer {
-    background-color: #0970a7;
-    color: #ffffff;
-    text-align: center;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-  }
+
   .CopyRights-Footer p {
     font-size: 14px;
   }
@@ -1229,11 +1218,11 @@ select {
 
   /* Footer */
 
-  .Footer-section {
-    padding: 20px;
-  }
   .Footer-Content {
-    flex-direction: column;
+    gap: 60px;
+    justify-content: start;
+    padding: 40px 20px;
+    grid-template-columns: 45% 30%;
   }
   .Footer-logo {
     height: 50px;
@@ -1253,16 +1242,7 @@ select {
   .Footer-Address {
     width: 100%;
   }
-  .CopyRights-Footer {
-    background-color: #0970a7;
-    color: #ffffff;
-    text-align: center;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-  }
+
   .CopyRights-Footer p {
     font-size: 14px;
   }
@@ -1600,11 +1580,18 @@ select {
   /* Footer */
 
   .Footer-section {
-    padding: 20px;
+    height: auto;
   }
+
   .Footer-Content {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
   }
+
   .Footer-logo {
     height: 50px;
     width: 120px;
@@ -1623,16 +1610,7 @@ select {
   .Footer-Address {
     width: 100%;
   }
-  .CopyRights-Footer {
-    background-color: #0970a7;
-    color: #ffffff;
-    text-align: center;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-  }
+
   .CopyRights-Footer p {
     font-size: 14px;
   }
