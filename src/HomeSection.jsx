@@ -18,22 +18,18 @@ import { PiAlarm } from "react-icons/pi";
 const HomeSection = () => {
   const x = [
     {
-      //   image: <cardimg />,
       heading: "AR Calling",
       para: "Lorem ipsum dolor sit amet consectetu Ttempor egestas neque lectus",
     },
     {
-      //   image: <cardimg />,
       heading: "AR Calling",
       para: "Lorem ipsum dolor sit amet consectetu Tempor egestas neque lectus",
     },
     {
-      //   image: <cardimg />,
       heading: "AR Calling",
       para: "Lorem ipsum dolor sit amet consectetu Tempor egestas neque lectus",
     },
     {
-      //   image: <cardimg />,
       heading: "AR Calling",
       para: "Lorem ipsum dolor sit amet consectetu Tempor egestas neque lectus",
     },
@@ -43,7 +39,7 @@ const HomeSection = () => {
       {/* HERO SECTION */}
       <div className="Hero-Section">
         <div className="Hero-bg-color">
-          <div className="hero-content-left">
+          <div className="Hero-Content-Left">
             <h2 className="Hero-header1">Master Medical Coding</h2>
             <h2 className="Hero-header2">
               Achieve Excellence in Healthcare Services
@@ -52,34 +48,28 @@ const HomeSection = () => {
               Your Gateway to Expert Training and Reliable Coding Solutions
             </p>
           </div>
-
           <form className="Hero-Form">
             <h1 className="Hero-Form-header">We're here to help!</h1>
             <p className="Hero-Form-para">
               Please contact us in case of any query.
             </p>
-
             <input type="text" placeholder="Your Name" className="form-input" />
-
             <input
               type="email"
               placeholder="Your Email address"
               className="form-input"
             />
-
             <input
               type="number"
               placeholder="Your phone number"
               className="form-input"
             />
-
             <select className="form-input">
               <option value="Select Course">Select Course</option>
               <option value="Html">Html</option>
               <option value="Css">Css</option>
               <option value="Java Script">Java Script</option>
             </select>
-
             <div>
               <button className="Hero-btn">
                 Get in Touch <span>{<FaArrowRight />}</span>

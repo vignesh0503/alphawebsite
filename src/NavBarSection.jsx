@@ -26,16 +26,16 @@ const NavBarSection = () => {
             </Link>
           </li>
           <li>
-            <Link to={"/about"}>About</Link>
+            <Link to={""}>About</Link>
           </li>
           <li>
-            <Link to={"/services"}>Services</Link>
+            <Link to={""}>Services</Link>
           </li>
           <li>
-            <Link to={"/courses"}>Courses</Link>
+            <Link to={""}>Courses</Link>
           </li>
           <li>
-            <Link to={"/contact"}>Contact</Link>
+            <Link to={""}>Contact</Link>
           </li>
         </ul>
       </div>

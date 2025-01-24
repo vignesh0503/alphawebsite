@@ -58,11 +58,10 @@
   opacity: 0;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 
 .Hero-Section {
   background-image: url(./assets/images/banner-img.jpeg);
-
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -76,7 +75,7 @@
   padding: 60px;
 }
 
-.hero-content-left {
+.Hero-Content-Left {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -86,7 +85,6 @@
   font-weight: 400;
   line-height: 47.5px;
   width: 277px;
-  /* margin-bottom: 10px; */
 }
 .Hero-header2 {
   font-size: 42px;
@@ -116,7 +114,6 @@
   font-size: 36px;
   font-weight: 500;
   line-height: 36px;
-  /* font-family: "Poppins"; */
   margin-bottom: 10px;
 }
 .Hero-Form-para {
@@ -193,8 +190,8 @@ select {
 .About-Card-Content {
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  gap: 20px;
-  padding: 50px 0;
+  gap: 40px;
+  padding: 80px 0px;
   align-items: center;
   justify-content: center;
 }
@@ -225,6 +222,7 @@ select {
   line-height: 24px;
   font-weight: 400;
   text-align: center;
+  width: 420px;
 }
 /* OUT TRANING SECTION */
 
@@ -234,7 +232,7 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 0px;
+  padding: 20px 0px;
   width: 100%;
 }
 
@@ -262,7 +260,7 @@ select {
   padding: 50px 20px 10px 20px;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 90%;
 }
 .Training-card-content {
   border-radius: 10px;
@@ -276,8 +274,6 @@ select {
 .cardimages {
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
-  /* border-radius: 10px; */
 }
 .Training-Card-subcontent {
   padding: 5px;
@@ -304,7 +300,6 @@ select {
   width: 100%;
 }
 .Start-btn {
-  /* margin-top: 20px; */
   padding: 8px 13px 8px 20px;
   border-radius: 5px;
   border: none;
@@ -412,7 +407,7 @@ select {
 }
 .Getin-btn {
   margin-top: 30px;
-  padding: 10px 30px;
+  padding: 10px 15px;
   border-radius: 5px;
   border: none;
   background-color: #0970a7;
@@ -428,7 +423,7 @@ select {
   display: flex;
   align-items: center;
 }
-/* Experience section */
+/* EXPERIENCE SECTION */
 
 .Experience-section {
   width: 100%;
@@ -486,7 +481,7 @@ select {
   width: 100%;
   display: none;
 }
-/* Do-For-Section */
+/* DO FOR SECTION */
 
 .Do-For-Section {
   display: flex;
@@ -511,14 +506,14 @@ select {
 
 .Do-For-Content h1 {
   text-align: center;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   font-size: 32px;
   line-height: 48px;
   font-weight: 500;
 }
 .Do-For-Content p {
   text-align: center;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   width: 500px;
   line-height: 22px;
   font-weight: 400;
@@ -578,8 +573,6 @@ select {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  /* width: 217px;
-  height: 59px; */
   padding: 15px 30px;
   border-radius: 6px;
   cursor: pointer;
@@ -594,7 +587,7 @@ select {
   align-items: center;
 }
 
-/* Footer Section */
+/* FOOTER SECTION */
 
 .Footer-section {
   background-color: #0970a7;
@@ -616,7 +609,7 @@ select {
   width: 120px;
 }
 .Footerpara {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   font-weight: 400;
   color: #dddddd;
@@ -667,20 +660,21 @@ select {
 .Copyrights-Footer p {
   padding: 30px;
 }
-/* Media Query */
+
+/* MEDIA QUERY */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* Hero Section */
+  /* HERO SECTION */
 
   .Hero-bg-color {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 608px;
-    padding: 0 60px;
+    /* height: 608px; */
+    padding: 60px;
   }
 
-  .hero-content-left {
+  .Hero-Content-Left {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -718,9 +712,9 @@ select {
     font-size: 13px;
   }
 
-  /* About Section */
+  /* ABOUT SECTION */
+
   .About-section {
-    margin-top: 60px;
     padding: 60px 20px;
   }
   .About-section-header h1 {
@@ -753,9 +747,10 @@ select {
   }
   .About-Card p {
     font-size: 16px;
+    width: 100%;
   }
 
-  /* Our Training Section */
+  /* OUR TRAINING SECTION*/
 
   .Training-Section {
     background: linear-gradient(#0970a7, #85c9ed);
@@ -801,7 +796,7 @@ select {
     padding: 10px;
   }
 
-  /* Get In Section */
+  /* GET IN SECTION */
 
   .Get-In-Section {
     background-color: #ffffff;
@@ -863,7 +858,7 @@ select {
     margin-right: 10px;
   }
 
-  /* Experience Section */
+  /* EXPERIENCE SECTION */
 
   .Experience-Bg {
     display: flex;
@@ -875,19 +870,18 @@ select {
   }
   .Experience-SubContent h1 {
     font-size: 20px;
-    /* text-align: center; */
     width: 100%;
     line-height: 20px;
   }
   .Experience-SubContent p {
     font-size: 13px;
     margin-top: 20px;
-    /* text-align: center; */
     width: 100%;
     line-height: 20px;
   }
 
-  /* What Can I Do For Us */
+  /* DO FOR US SECTION */
+
   .Do-for-Header {
     display: flex;
     flex-direction: column;
@@ -932,7 +926,7 @@ select {
     line-height: 10px;
   }
 
-  /* Footer */
+  /* FOOTER SECTION */
 
   .Footer-logo {
     height: 50px;
@@ -959,16 +953,15 @@ select {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* Hero Section */
+  /* HERO SECTION */
 
   .Hero-bg-color {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* padding: 0px; */
   }
 
-  .hero-content-left {
+  .Hero-Content-Left {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1012,7 +1005,8 @@ select {
     font-size: 12px;
   }
 
-  /* About Section */
+  /* ABOUT SECTION */
+
   .About-section {
     margin-top: 60px;
     padding: 60px 20px;
@@ -1051,7 +1045,7 @@ select {
     font-size: 12px;
   }
 
-  /* Our Training Section */
+  /* OUR TRAINING SECTION */
 
   .Training-Section {
     padding: 0px;
@@ -1087,7 +1081,7 @@ select {
     padding: 5px 10px 5px 10px;
   }
 
-  /* Get In Section */
+  /* GET IN SECTION */
 
   .Get-In-Section {
     grid-template-columns: auto;
@@ -1147,7 +1141,7 @@ select {
     align-items: center;
   }
 
-  /* Experience Section */
+  /* EXPERIENCE SECTION */
 
   .Experience-Bg {
     display: flex;
@@ -1159,19 +1153,18 @@ select {
   }
   .Experience-SubContent h1 {
     font-size: 20px;
-    /* text-align: center; */
     width: 100%;
     line-height: 20px;
   }
   .Experience-SubContent p {
     font-size: 13px;
     margin-top: 20px;
-    /* text-align: center; */
     width: 100%;
     line-height: 20px;
   }
 
-  /* What Can I Do For Us */
+  /* DO FOR US SECTION */
+
   .Do-for-Header {
     display: flex;
     flex-direction: column;
@@ -1216,7 +1209,7 @@ select {
     line-height: 10px;
   }
 
-  /* Footer */
+  /* FOOTER SECTION */
 
   .Footer-Content {
     gap: 60px;
@@ -1266,7 +1259,8 @@ select {
   }
 
   .nav-ul {
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
     top: 80px;
     left: 0px;
     width: 100%;
@@ -1296,6 +1290,7 @@ select {
 
   #check:checked ~ .nav-ul {
     display: block;
+    transition: ease 0.5s;
   }
 
   .checkbtn .x-icon {
@@ -1316,15 +1311,14 @@ select {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 20px 40px 40px 40px;
+    /* padding: 20px 40px 40px 40px; */
   }
 
-  .hero-content-left {
+  .Hero-Content-Left {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* padding-top: 30px; */
   }
   .Hero-header1 {
     font-size: 20px;
@@ -1363,7 +1357,8 @@ select {
     margin-top: 15px;
   }
 
-  /* About Section */
+  /* ABOUT SECTION */
+
   .About-section {
     padding: 60px 20px;
   }
@@ -1402,7 +1397,7 @@ select {
     font-size: 12px;
   }
 
-  /* Our Training Section */
+  /* OUR TRAINING SECTION */
 
   .Training-Section {
     padding: 0px;
@@ -1442,7 +1437,7 @@ select {
     padding: 5px 10px 5px 10px;
   }
 
-  /* Get In Section */
+  /* GET IN SECTION*/
 
   .Get-In-Section {
     grid-template-columns: 1fr;
@@ -1490,7 +1485,7 @@ select {
     align-items: center;
   }
 
-  /* Experience Section */
+  /* EXPERIENCE SECTION */
 
   .Experience-Bg {
     display: flex;
@@ -1532,7 +1527,8 @@ select {
     border-radius: 20px;
   }
 
-  /* What Can I Do For Us */
+  /* DO FOR US SECTION */
+
   .Do-for-Header {
     display: flex;
     flex-direction: column;
@@ -1577,7 +1573,7 @@ select {
     line-height: 10px;
   }
 
-  /* Footer */
+  /* FOOTER */
 
   .Footer-section {
     height: auto;
@@ -1587,23 +1583,23 @@ select {
     grid-template-columns: auto auto;
     gap: 20px;
     justify-content: center;
-    /* align-items: center; */
     padding: 40px 10px;
   }
 
   .Footer-logo {
     height: 50px;
-    width: 120px;
   }
   .Footerpara {
     width: 100%;
+    font-size: 12px !important;
   }
 
   .Footer-icon p {
     font-size: 20px !important;
   }
-  .FooterSubcontent {
-    align-items: center;
+
+  .FooterSubcontent p {
+    font-size: 12px;
   }
   .FooterSubcontent p span {
     font-size: 20px;
@@ -1613,6 +1609,6 @@ select {
   }
 
   .CopyRights-Footer p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
