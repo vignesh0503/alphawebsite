@@ -2,44 +2,69 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logoimg from "./assets/images/Logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
 
 const NavBarSection = () => {
+  const [menuopen, setMenuopen] = useState(false);
+
+  const toggleopen = () => {
+    setMenuopen(!menuopen);
+  };
+
+  const closeMenu = () => {
+    setMenuopen(false);
+  };
+
   return (
     <div className="navbar">
-      {/* <div className="nav"> */}
       <div className="logo">
         <img src={logoimg} alt="Logo-img" />
       </div>
 
       <div className="navbar-content">
-        <input type="checkbox" id="check" />
+        <input
+          type="checkbox"
+          id="check"
+          checked={menuopen}
+          onChange={toggleopen}
+        />
 
         <label htmlFor="check" className="checkbtn">
-          <FaBars className="bar-icon" />
-          <FaTimes className="x-icon" />
+          {menuopen ? (
+            <FaTimes className="x-icon" />
+          ) : (
+            <FaBars className="bar-icon" />
+          )}
         </label>
 
-        <ul className="nav-ul ">
+        <ul className={`nav-ul ${menuopen ? "open" : ""}`}>
           <li>
-            <Link className="active" to={"/"}>
+            <Link onClick={closeMenu} className="active" to={"/"}>
               Home
             </Link>
           </li>
           <li>
-            <Link to={""}>About</Link>
+            <Link onClick={closeMenu} to={""}>
+              About
+            </Link>
           </li>
           <li>
-            <Link to={""}>Services</Link>
+            <Link onClick={closeMenu} to={""}>
+              Services
+            </Link>
           </li>
           <li>
-            <Link to={""}>Courses</Link>
+            <Link onClick={closeMenu} to={""}>
+              Courses
+            </Link>
           </li>
           <li>
-            <Link to={""}>Contact</Link>
+            <Link onClick={closeMenu} to={""}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
-      {/* </div> */}
     </div>
   );
 };

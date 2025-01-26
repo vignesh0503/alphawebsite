@@ -1,0 +1,313 @@
+.Hero-Form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  /* height: 430px; */
+  height: auto;
+}
+.Hero-Form-header {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+.Hero-Form-para {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #252525b2;
+  margin-bottom: 30px;
+}
+.Form {
+  margin-bottom: 20px;
+}
+.Form p {
+  text-align: start;
+}
+.form-input {
+  border: 1px solid #e6e9fc;
+  border-radius: 5px;
+  /* padding: 0px 0 0px 10px; */
+  height: 40px;
+  outline: none;
+  /* margin-bottom: 20px; */
+  /* background-color: #ffffff; */
+  width: 100%;
+}
+.form-input::placeholder {
+  color: #727695;
+  font-family: "Roboto";
+  padding: 0px 0 0px 10px;
+}
+select {
+  color: #727695;
+  background-color: #ffffff;
+  padding: 0px 0 0px 10px;
+  font-family: "Roboto";
+}
+.Hero-btn {
+  /* margin-top: 10px; */
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0970a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+}
+.Hero-btn span {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* DoForm Section */
+.Do-For-Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 60px 20px;
+}
+
+.Do-For-Content h1 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+}
+.Do-For-Content p {
+  text-align: center;
+  width: 500px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.Do-Form-Form {
+  display: grid;
+  grid-template-columns: 42% 42%;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 20px;
+  width: 100%;
+  margin-top: 40px;
+}
+.Form-Do {
+  margin-bottom: 20px;
+}
+.Do-Form-input {
+  border: 1px solid #e6e9fc;
+  border-radius: 5px;
+  height: 50px;
+  outline: none;
+  width: 100%;
+}
+.Do-Form-input::placeholder {
+  color: #727695;
+  font-family: "Roboto";
+  padding: 0px 0 0px 10px;
+}
+select {
+  color: #727695;
+  background-color: #ffffff;
+  padding: 0px 0 0px 10px;
+  font-family: "Roboto";
+}
+.Do-Forbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.Do-For-btn {
+  border: none;
+  background-color: #0970a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 31.37px;
+}
+.Do-For-btn span {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .Hero-Form {
+    display: flex;
+    flex-direction: column;
+  }
+  .Hero-Form-header {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .Hero-Form-para {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .Getin-btn {
+    padding: 10px 30px;
+    font-size: 13px;
+  }
+
+  /* Do for Section */
+  .Do-for-Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Do-For-Content h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .Do-For-Content p {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .Do-Forbtn {
+    margin-top: 20px;
+  }
+  .Do-For-btn {
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .Hero-Form {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .Hero-Form-header {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+  .Hero-Form-para {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .Hero-btn {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  /* Do For Section */
+
+  .Do-For-Content h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .Do-For-Content p {
+    width: 100%;
+    font-size: 13px;
+  }
+  .Do-Form-Form {
+    grid-template-columns: 1fr;
+  }
+
+  .Form-Do {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .Do-Form-Form input,
+  select {
+    padding: 12px 12px;
+  }
+  .Do-Form-Form select {
+    font-size: 14px;
+  }
+  .Do-Form-Form input::placeholder {
+    font-size: 14px;
+  }
+  .Do-Forbtn {
+    margin-top: 20px;
+  }
+  .Do-For-btn {
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 10px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .Hero-Form {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .Hero-Form-header {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .Hero-Form-para {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+
+  .Hero-btn {
+    padding: 10px 15px;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .Do-For-Content h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .Do-For-Content p {
+    width: 100%;
+    font-size: 13px;
+  }
+  .Do-Form-Form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .Form-Do {
+    margin-bottom: 20px;
+  }
+
+  .Do-Forbtn {
+    margin-top: 20px;
+  }
+  .Do-For-btn {
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 10px;
+  }
+}

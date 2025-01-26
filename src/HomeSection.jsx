@@ -1,9 +1,13 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { FaArrowRight, FaLocationDot, FaPhone } from "react-icons/fa6";
 import Heartimg from "./assets/images/Heart.png";
 // import GetinTouchimg from "./assets/images/Rectangle 631 .png";
 import GetinTouchimg from "./assets/images/cart-img.jpeg";
 import cardimg from "./assets/images/education.png";
+import ArCallingimg1 from "./assets/images/ArCallingimg-one.jpg";
+import ArCallingimg2 from "./assets/images/ArCallingimg-two.jpg";
+import ArCallingimg3 from "./assets/images/ArCallingimg-three.png";
+
 import { IoIosArrowForward, IoMdMail } from "react-icons/io";
 import { GoShieldCheck } from "react-icons/go";
 import Experinceimg from "./assets/images/Exp.png";
@@ -14,22 +18,28 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { PiAlarm } from "react-icons/pi";
+import Form from "./Form/Form";
+import DoForm from "./Form/DoForm";
 
 const HomeSection = () => {
   const x = [
     {
+      image: cardimg,
       heading: "AR Calling",
       para: "Lorem ipsum dolor sit amet consectetu Ttempor egestas neque lectus",
     },
     {
+      image: ArCallingimg1,
       heading: "AR Calling",
       para: "Lorem ipsum dolor sit amet consectetu Tempor egestas neque lectus",
     },
     {
+      image: ArCallingimg2,
       heading: "AR Calling",
       para: "Lorem ipsum dolor sit amet consectetu Tempor egestas neque lectus",
     },
     {
+      image: ArCallingimg3,
       heading: "AR Calling",
       para: "Lorem ipsum dolor sit amet consectetu Tempor egestas neque lectus",
     },
@@ -37,7 +47,7 @@ const HomeSection = () => {
   return (
     <Fragment>
       {/* HERO SECTION */}
-      <div className="Hero-Section">
+      <div className="Hero-Section" id="Hero">
         <div className="Hero-bg-color">
           <div className="Hero-Content-Left">
             <h2 className="Hero-header1">Master Medical Coding</h2>
@@ -48,17 +58,31 @@ const HomeSection = () => {
               Your Gateway to Expert Training and Reliable Coding Solutions
             </p>
           </div>
-          <form className="Hero-Form">
+          {/* <div> */}
+          <Form />
+          {/* </div> */}
+          {/* <form className="Hero-Form">
             <h1 className="Hero-Form-header">We're here to help!</h1>
             <p className="Hero-Form-para">
               Please contact us in case of any query.
             </p>
             <input type="text" placeholder="Your Name" className="form-input" />
-            <input
-              type="email"
-              placeholder="Your Email address"
-              className="form-input"
-            />
+            <div>
+              <input
+                onChange={HandleEmail}
+                type="email"
+                placeholder="Enter Your Email Address"
+                value={email}
+                className="form-input"
+              />
+              {emailMessage && (
+                <p
+                  style={{ color: "red", fontSize: "12px", margin: "0px 10px" }}
+                >
+                  {emailMessage}
+                </p>
+              )}
+            </div>
             <input
               type="number"
               placeholder="Your phone number"
@@ -71,16 +95,27 @@ const HomeSection = () => {
               <option value="Java Script">Java Script</option>
             </select>
             <div>
-              <button className="Hero-btn">
+              <button className="Hero-btn" onClick={HandleSubmit}>
                 Get in Touch <span>{<FaArrowRight />}</span>
               </button>
+              {success && (
+                <p
+                  style={{
+                    color: "green",
+                    fontSize: "12px",
+                    margin: "0px 10px",
+                  }}
+                >
+                  {success}
+                </p>
+              )}
             </div>
-          </form>
+          </form> */}
         </div>
       </div>
 
       {/* ABOUT_SECTION */}
-      <div className="About-section">
+      <div className="About-section" id="About">
         <div className="About-section-header">
           <h1>About Alpha</h1>
           <p>
@@ -125,7 +160,7 @@ const HomeSection = () => {
 
       {/* OUR TRANNING PROGRAM */}
 
-      <div className="Training-Section">
+      <div className="Training-Section" id="Training">
         <div className="Training-Header">
           <h1>Our Training Programs</h1>
           <p>
@@ -139,7 +174,7 @@ const HomeSection = () => {
           {x.map((item) => (
             <div className="Training-card-content">
               <div className="Training-card-img">
-                <img src={cardimg} className="cardimages" alt="img" />
+                <img src={item.image} className="cardimages" alt="img" />
               </div>
               <div className="Training-Card-subcontent">
                 <h3>{item.heading}</h3>
@@ -164,7 +199,7 @@ const HomeSection = () => {
 
       {/* Get in Touch */}
 
-      <div className="Get-In-Section">
+      <div className="Get-In-Section" id="Getin">
         <div className="Get-Card-Img">
           <img src={GetinTouchimg} alt="" />
         </div>
@@ -234,7 +269,7 @@ const HomeSection = () => {
 
       {/* What Can I Do For Us */}
 
-      <div className="Do-For-Section">
+      {/* <div className="Do-For-Section">
         <div className="Do-For-Content">
           <div className="Do-for-Header">
             <h1>What can us do for you</h1>
@@ -262,10 +297,13 @@ const HomeSection = () => {
             </div>
           </form>
         </div>
+      </div> */}
+      <div>
+        <DoForm />
       </div>
 
       {/* Footer */}
-      <div className="Footer-section">
+      <div className="Footer-section" id="Footer">
         <div className="Footer-Content">
           <div className="FooterSubcontent">
             <div className="Footer-logo">
