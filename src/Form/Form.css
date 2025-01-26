@@ -92,7 +92,7 @@ select {
   grid-template-columns: 42% 42%;
   justify-content: center;
   /* align-items: center; */
-  gap: 20px;
+  /* gap: 20px; */
   width: 100%;
   margin-top: 40px;
 }
@@ -184,7 +184,7 @@ select {
   }
 
   .Do-Forbtn {
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
   .Do-For-btn {
     font-weight: 500;
@@ -246,7 +246,7 @@ select {
     font-size: 14px;
   }
   .Do-Forbtn {
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
   .Do-For-btn {
     font-weight: 500;
@@ -293,7 +293,7 @@ select {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
     width: 100%;
     margin-top: 40px;
   }
@@ -302,7 +302,7 @@ select {
   }
 
   .Do-Forbtn {
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
   .Do-For-btn {
     font-weight: 500;
