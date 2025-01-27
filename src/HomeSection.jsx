@@ -7,7 +7,6 @@ import cardimg from "./assets/images/education.png";
 import ArCallingimg1 from "./assets/images/ArCallingimg-one.jpg";
 import ArCallingimg2 from "./assets/images/ArCallingimg-two.jpg";
 import ArCallingimg3 from "./assets/images/ArCallingimg-three.png";
-
 import { IoIosArrowForward, IoMdMail } from "react-icons/io";
 import { GoShieldCheck } from "react-icons/go";
 import Experinceimg from "./assets/images/Exp.png";
@@ -44,6 +43,7 @@ const HomeSection = () => {
       para: "Lorem ipsum dolor sit amet consectetu Tempor egestas neque lectus",
     },
   ];
+
   return (
     <Fragment>
       {/* HERO SECTION */}
@@ -61,56 +61,6 @@ const HomeSection = () => {
           <div className="HeroForm">
             <Form />
           </div>
-          {/* <form className="Hero-Form">
-            <h1 className="Hero-Form-header">We're here to help!</h1>
-            <p className="Hero-Form-para">
-              Please contact us in case of any query.
-            </p>
-            <input type="text" placeholder="Your Name" className="form-input" />
-            <div>
-              <input
-                onChange={HandleEmail}
-                type="email"
-                placeholder="Enter Your Email Address"
-                value={email}
-                className="form-input"
-              />
-              {emailMessage && (
-                <p
-                  style={{ color: "red", fontSize: "12px", margin: "0px 10px" }}
-                >
-                  {emailMessage}
-                </p>
-              )}
-            </div>
-            <input
-              type="number"
-              placeholder="Your phone number"
-              className="form-input"
-            />
-            <select className="form-input">
-              <option value="Select Course">Select Course</option>
-              <option value="Html">Html</option>
-              <option value="Css">Css</option>
-              <option value="Java Script">Java Script</option>
-            </select>
-            <div>
-              <button className="Hero-btn" onClick={HandleSubmit}>
-                Get in Touch <span>{<FaArrowRight />}</span>
-              </button>
-              {success && (
-                <p
-                  style={{
-                    color: "green",
-                    fontSize: "12px",
-                    margin: "0px 10px",
-                  }}
-                >
-                  {success}
-                </p>
-              )}
-            </div>
-          </form> */}
         </div>
       </div>
 
@@ -269,35 +219,6 @@ const HomeSection = () => {
 
       {/* What Can I Do For Us */}
 
-      {/* <div className="Do-For-Section">
-        <div className="Do-For-Content">
-          <div className="Do-for-Header">
-            <h1>What can us do for you</h1>
-            <p>
-              We are ready to work on a project of any complexity, whether it’s
-              commercial or residential.
-            </p>
-          </div>
-          <form className="Do-Form-Form">
-            <div className="Form-Do">
-              <input type="text" placeholder="Your Name" />
-              <input type="email" placeholder="Your Email address" />
-              <input type="number" placeholder="Your phone number" />
-              <select>
-                <option value="Select Course">Select Course</option>
-                <option value="Html">Html</option>
-                <option value="Css">Css</option>
-                <option value="Java Script">Java Script</option>
-              </select>
-            </div>
-            <div className="Do-Forbtn">
-              <button className="Do-For-btn">
-                Get in Touch <span>{<FaArrowRight />}</span>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div> */}
       <div id="WhatDo">
         <DoForm />
       </div>
@@ -366,25 +287,29 @@ const HomeSection = () => {
           </div>
           <div className="FooterSubcontent">
             <h1>Contact</h1>
-
-            <p className="Footer-Address">
+            <a className="Footer-Address" href="tel:+919876543210">
               <span>
                 <FaPhone />
               </span>
               +91 98765 43210
-            </p>
-            <p className="Footer-Address">
+            </a>
+            <a className="Footer-Address" href="mailto:EMAIL" target="_blank">
               <span>
                 <IoMdMail />
               </span>
               alpha123@gmail.com
-            </p>
-            <p className="Footer-Address">
+            </a>
+            <a
+              className="Footer-Address"
+              href="https://maps.app.goo.gl/mpB3aJLL3fvmCPBH7"
+              target="_blank"
+            >
               <span>
                 <FaLocationDot />
               </span>
-              Lorem ipsum dolor sit amet consectetur
-            </p>
+              Christopher Colony Extension, Parvathipuram, Nagercoil, Tamil Nadu
+              629003
+            </a>
           </div>
         </div>
         <div className="Copyrights-Footer">

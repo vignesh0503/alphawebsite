@@ -1,5 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 import logoimg from "./assets/images/Logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
@@ -39,29 +40,35 @@ const NavBarSection = () => {
 
         <ul className={`nav-ul ${menuopen ? "open" : ""}`}>
           <li>
-            <a onClick={closeMenu} className="active" to={"/"}>
+            <Link
+              onClick={closeMenu}
+              className="active"
+              spy={true}
+              smooth={true}
+              to="Hero"
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={closeMenu} href="#About">
+            <Link onClick={closeMenu} spy={true} smooth={true} to="About">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={closeMenu} href="#Training">
+            <Link onClick={closeMenu} spy={true} smooth={true} to="Training">
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={closeMenu} href="#Getin">
+            <Link onClick={closeMenu} spy={true} smooth={true} to="Getin">
               Courses
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={closeMenu} href="#WhatDo">
+            <Link onClick={closeMenu} spy={true} smooth={true} to="WhatDo">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

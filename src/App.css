@@ -30,6 +30,7 @@
   display: flex;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .nav-ul li {
@@ -68,8 +69,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: 608px; */
-  padding: 60px;
+  height: 550px;
+  padding: 0px 60px;
 }
 
 .Hero-Content-Left {
@@ -99,61 +100,6 @@
   font-size: 17px;
   width: 440px;
 }
-/* .Hero-Form {
-  display: flex;
-  flex-direction: column;
-
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 30px;
-}
-.Hero-Form-header {
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 36px;
-  margin-bottom: 10px;
-}
-.Hero-Form-para {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px;
-  color: #252525b2;
-  margin-bottom: 30px;
-}
-.form-input {
-  border: 1px solid #e6e9fc;
-  border-radius: 5px;
-  padding: 12px 0 12px 12px;
-  outline: none;
-  margin-bottom: 20px;
-
-}
-.form-input::placeholder {
-  color: #727695;
-  font-family: "Roboto";
-}
-select {
-  color: #727695;
-  background-color: #ffffff;
-}
-.Hero-btn {
-  margin-top: 30px;
-  padding: 10px 30px;
-  border-radius: 5px;
-  border: none;
-  background-color: #0970a7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  font-size: 13px;
-  cursor: pointer;
-}
-.Hero-btn span {
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-} */
 
 /* ABOUT-SECTION */
 
@@ -485,107 +431,6 @@ select {
 }
 /* DO FOR SECTION */
 
-/* .Do-For-Section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.Do-For-Content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- 
-  width: 90%;
-  padding: 60px 20px;
-}
-.Do-for-Header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.Do-For-Content h1 {
-  text-align: center;
- 
-  font-size: 32px;
-  line-height: 48px;
-  font-weight: 500;
-}
-.Do-For-Content p {
-  text-align: center;
-  width: 500px;
-  line-height: 22px;
-  font-weight: 400;
-}
-.Do-Form-Form {
-  display: flex;
- flex-direction: column;
- 
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-}
-.Form-Do {
-  display: grid;
-  grid-template-columns: 42% 42%;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-}
-.Do-Form-Form input,
-select {
-  width: 100%;
-  padding: 17px 17px;
-  box-sizing: border-box;
-  outline: none;
-  border: 1px solid #e6e9fc;
-  border-radius: 6px;
-}
-.Do-Form-Form select {
-  color: #727695;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: "Roboto";
-  background-color: #ffffff;
-}
-.Do-Form-Form input::placeholder {
-  color: #727695;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: "Roboto";
-}
-.Do-Forbtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-.Do-For-btn {
-  border: none;
-  background-color: #0970a7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  padding: 15px 30px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-family: "Roboto";
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 31.37px;
-}
-.Do-For-btn span {
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-} */
-
 /* FOOTER SECTION */
 
 .Footer-section {
@@ -641,10 +486,7 @@ select {
   line-height: 21px;
   color: #dddddd;
 }
-.FooterSubcontent p span {
-  font-size: 24px;
-  margin-right: 10px;
-}
+
 .Footer-details-for-lapview {
   display: block;
 }
@@ -653,9 +495,11 @@ select {
 }
 .Footer-Address {
   display: flex;
-
   align-items: center;
   width: 250px;
+  color: #dddddd;
+  font-size: 14px;
+  text-decoration: none;
 }
 .Copyrights-Footer {
   border-top: 2px solid white;
@@ -666,6 +510,12 @@ select {
   padding: 30px;
 }
 
+.Footer-Address span {
+  font-size: 24px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
 /* MEDIA QUERY */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -676,7 +526,7 @@ select {
     justify-content: space-between;
     align-items: center;
     /* height: 608px; */
-    padding: 60px;
+    /* padding: 60px; */
   }
 
   .Hero-Content-Left {
@@ -887,7 +737,6 @@ select {
 
   /* DO FOR US SECTION */
 
-  
   /* FOOTER SECTION */
 
   .Footer-logo {
@@ -952,7 +801,6 @@ select {
     text-align: center;
     width: 100%;
   }
-  
 
   /* ABOUT SECTION */
 
@@ -1114,7 +962,6 @@ select {
 
   /* DO FOR US SECTION */
 
-
   /* FOOTER SECTION */
 
   .Footer-Content {
@@ -1240,7 +1087,7 @@ select {
     /* text-align: center; */
     width: 100%;
   }
-  
+
   /* ABOUT SECTION */
 
   .About-section {
@@ -1416,7 +1263,6 @@ select {
   }
 
   /* DO FOR US SECTION */
-
 
   /* FOOTER */
 
