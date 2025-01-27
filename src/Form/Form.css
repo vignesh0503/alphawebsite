@@ -1,3 +1,8 @@
+.HeroForm {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
 .Hero-Form {
   display: flex;
   flex-direction: column;
