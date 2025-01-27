@@ -34,6 +34,7 @@
   outline: none;
   width: 100%;
   /* padding-left: 10px; */
+  /* font-size: 16px; */
 }
 .form-input::placeholder {
   color: #727695;
@@ -109,7 +110,7 @@ select {
   height: 50px;
   outline: none;
   width: 100%;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 .Do-Form-input::placeholder {
   color: #727695;
@@ -270,6 +271,9 @@ select {
     font-size: 10px;
     margin-bottom: 20px;
   }
+  .form-input {
+    font-size: 16px;
+  }
 
   .Hero-btn {
     padding: 10px 15px;
@@ -295,6 +299,9 @@ select {
     gap: 0px;
     width: 100%;
     margin-top: 40px;
+  }
+  .Do-Form-input {
+    font-size: 16px;
   }
   .Form-Do {
     margin-bottom: 20px;

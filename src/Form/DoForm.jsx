@@ -16,6 +16,8 @@ const DoForm = () => {
     const namepattern =
       /^[a-zA-Z0-9]+([a-zA-Z0-9](_|-| )[a-zA-Z0-9])*[a-zA-Z0-9]+$/;
     const emailpattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const numberpattern =
+      /^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
 
     let valid = true;
     if (username.trim() === "") {
@@ -40,10 +42,12 @@ const DoForm = () => {
     if (phoneNo.trim() === "") {
       setPhonenoMessage("Enter Your Number");
       valid = false;
+    } else if (!numberpattern.test(phoneNo)) {
+      setPhonenoMessage("Invalid Number");
+      valid = false;
     } else {
       setPhonenoMessage("");
     }
-
     if (valid) {
       setSuccess("Form submitted successfully");
       setUsername("");
@@ -91,7 +95,7 @@ const DoForm = () => {
             <p style={{ color: "red", fontSize: "12px" }}>{userMessage}</p>
           )}
         </div>
-        <div className="Form">
+        <div className="Form-Do">
           <input
             value={email}
             onChange={handleEmail}
@@ -103,7 +107,7 @@ const DoForm = () => {
             <p style={{ color: "red", fontSize: "12px" }}>{emailMessage}</p>
           )}
         </div>
-        <div className="Form">
+        <div className="Form-Do">
           <input
             type="number"
             onChange={handlePhone}
@@ -114,7 +118,7 @@ const DoForm = () => {
             <p style={{ color: "red", fontSize: "12px" }}>{phonenoMessage}</p>
           )}
         </div>
-        <div className="Form">
+        <div className="Form-Do">
           <select className="Do-Form-input">
             <option value="Select Course">Select Course</option>
             <option value="Html">Html</option>
@@ -128,7 +132,11 @@ const DoForm = () => {
           Get in Touch <span>{<FaArrowRight />}</span>
         </button>
       </div>
-      {success && <p style={{ color: "green", fontSize: "12px" }}>{success}</p>}
+      {success && (
+        <p style={{ color: "green", fontSize: "12px", textAlign: "center" }}>
+          {success}
+        </p>
+      )}
     </div>
   );
 };
