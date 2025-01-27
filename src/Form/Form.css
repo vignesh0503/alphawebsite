@@ -25,6 +25,7 @@
 }
 .Form p {
   text-align: start;
+  width: 100%;
 }
 .form-input {
   border: 1px solid #e6e9fc;
@@ -32,17 +33,19 @@
   height: 40px;
   outline: none;
   width: 100%;
+  /* padding-left: 10px; */
 }
 .form-input::placeholder {
   color: #727695;
   font-family: "Roboto";
-  padding: 0px 0 0px 10px;
+  padding-left: 10px;
 }
+
 select {
   color: #727695;
   background-color: #ffffff;
-  padding: 0px 0 0px 10px;
   font-family: "Roboto";
+  padding-left: 10px;
 }
 .Hero-btn {
   padding: 10px 30px;
@@ -106,6 +109,7 @@ select {
   height: 50px;
   outline: none;
   width: 100%;
+  font-size: 16px;
 }
 .Do-Form-input::placeholder {
   color: #727695;
@@ -115,7 +119,6 @@ select {
 select {
   color: #727695;
   background-color: #ffffff;
-  padding: 0px 0 0px 10px;
   font-family: "Roboto";
 }
 .Do-Forbtn {

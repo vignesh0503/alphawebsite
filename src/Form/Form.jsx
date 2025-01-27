@@ -15,6 +15,8 @@ function Form() {
     const namepattern =
       /^[a-zA-Z0-9]+([a-zA-Z0-9](_|-| )[a-zA-Z0-9])*[a-zA-Z0-9]+$/;
     const emailpattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const numberpattern =
+      /^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
 
     let valid = true;
     if (username.trim() === "") {
@@ -38,6 +40,9 @@ function Form() {
     }
     if (phoneNo.trim() === "") {
       setPhonenoMessage("Enter Your Number");
+      valid = false;
+    } else if (!numberpattern.test(phoneNo)) {
+      setPhonenoMessage("Invalid Number");
       valid = false;
     } else {
       setPhonenoMessage("");
