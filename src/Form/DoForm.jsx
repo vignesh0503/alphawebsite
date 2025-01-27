@@ -110,6 +110,7 @@ const DoForm = () => {
         <div className="Form-Do">
           <input
             type="number"
+            value={phoneNo}
             onChange={handlePhone}
             placeholder="Your phone number"
             className="Do-Form-input"

@@ -45,28 +45,53 @@ const NavBarSection = () => {
               className="active"
               spy={true}
               smooth={true}
+              duration={500}
               to="Hero"
             >
               Home
             </Link>
           </li>
           <li>
-            <Link onClick={closeMenu} spy={true} smooth={true} to="About">
+            <Link
+              onClick={closeMenu}
+              spy={true}
+              smooth={true}
+              duration={500}
+              to="About"
+            >
               About
             </Link>
           </li>
           <li>
-            <Link onClick={closeMenu} spy={true} smooth={true} to="Training">
+            <Link
+              onClick={closeMenu}
+              spy={true}
+              smooth={true}
+              duration={500}
+              to="Training"
+            >
               Services
             </Link>
           </li>
           <li>
-            <Link onClick={closeMenu} spy={true} smooth={true} to="Getin">
+            <Link
+              onClick={closeMenu}
+              spy={true}
+              smooth={true}
+              duration={500}
+              to="Getin"
+            >
               Courses
             </Link>
           </li>
           <li>
-            <Link onClick={closeMenu} spy={true} smooth={true} to="WhatDo">
+            <Link
+              onClick={closeMenu}
+              spy={true}
+              smooth={true}
+              duration={500}
+              to="WhatDo"
+            >
               Contact
             </Link>
           </li>

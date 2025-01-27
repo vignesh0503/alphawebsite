@@ -106,6 +106,7 @@ function Form() {
       <div className="Form">
         <input
           type="number"
+          value={phoneNo}
           onChange={handlePhone}
           placeholder="Your phone number"
           className="form-input"
