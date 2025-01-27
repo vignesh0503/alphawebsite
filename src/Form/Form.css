@@ -29,11 +29,8 @@
 .form-input {
   border: 1px solid #e6e9fc;
   border-radius: 5px;
-  /* padding: 0px 0 0px 10px; */
   height: 40px;
   outline: none;
-  /* margin-bottom: 20px; */
-  /* background-color: #ffffff; */
   width: 100%;
 }
 .form-input::placeholder {
@@ -48,7 +45,6 @@ select {
   font-family: "Roboto";
 }
 .Hero-btn {
-  /* margin-top: 10px; */
   padding: 10px 30px;
   border-radius: 5px;
   border: none;
@@ -71,10 +67,16 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   padding: 60px 20px;
 }
-
+.Do-For-Content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
 .Do-For-Content h1 {
   text-align: center;
   font-size: 32px;
@@ -82,7 +84,6 @@ select {
   font-weight: 500;
 }
 .Do-For-Content p {
-  text-align: center;
   width: 500px;
   line-height: 22px;
   font-weight: 400;
@@ -92,7 +93,7 @@ select {
   grid-template-columns: 42% 42%;
   justify-content: center;
   /* align-items: center; */
-  /* gap: 20px; */
+  gap: 20px;
   width: 100%;
   margin-top: 40px;
 }
@@ -159,7 +160,9 @@ select {
     font-size: 18px;
     margin-bottom: 30px;
   }
-
+  .form-input {
+    height: 40px;
+  }
   .Getin-btn {
     padding: 10px 30px;
     font-size: 13px;
@@ -183,9 +186,6 @@ select {
     font-size: 13px;
   }
 
-  .Do-Forbtn {
-    /* margin-top: 20px; */
-  }
   .Do-For-btn {
     font-weight: 500;
     padding: 10px 15px;
@@ -229,25 +229,21 @@ select {
   }
   .Do-Form-Form {
     grid-template-columns: 1fr;
+    gap: 0px;
   }
 
   .Form-Do {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .Do-Form-Form input,
-  select {
-    padding: 12px 12px;
-  }
+
   .Do-Form-Form select {
     font-size: 14px;
   }
   .Do-Form-Form input::placeholder {
     font-size: 14px;
   }
-  .Do-Forbtn {
-    /* margin-top: 20px; */
-  }
+
   .Do-For-btn {
     font-weight: 500;
     padding: 10px 15px;
@@ -293,7 +289,7 @@ select {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    /* gap: 20px; */
+    gap: 0px;
     width: 100%;
     margin-top: 40px;
   }
@@ -301,9 +297,6 @@ select {
     margin-bottom: 20px;
   }
 
-  .Do-Forbtn {
-    /* margin-top: 20px; */
-  }
   .Do-For-btn {
     font-weight: 500;
     padding: 10px 15px;

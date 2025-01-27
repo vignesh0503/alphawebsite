@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import logoimg from "./assets/images/Logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
@@ -39,29 +39,29 @@ const NavBarSection = () => {
 
         <ul className={`nav-ul ${menuopen ? "open" : ""}`}>
           <li>
-            <Link onClick={closeMenu} className="active" to={"/"}>
+            <a onClick={closeMenu} className="active" to={"/"}>
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link onClick={closeMenu} to={""}>
+            <a onClick={closeMenu} href="#About">
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link onClick={closeMenu} to={""}>
+            <a onClick={closeMenu} href="#Training">
               Services
-            </Link>
+            </a>
           </li>
           <li>
-            <Link onClick={closeMenu} to={""}>
+            <a onClick={closeMenu} href="#Getin">
               Courses
-            </Link>
+            </a>
           </li>
           <li>
-            <Link onClick={closeMenu} to={""}>
+            <a onClick={closeMenu} href="#WhatDo">
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

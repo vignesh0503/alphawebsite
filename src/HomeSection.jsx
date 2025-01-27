@@ -248,7 +248,7 @@ const HomeSection = () => {
 
       {/* Experience SECTION */}
 
-      <div className="Experience-section">
+      <div className="Experience-section" id="Experience">
         <div className="Experience-Content">
           <div class="Experience-Bg">
             <div className="Experience-SubContent">
@@ -298,7 +298,7 @@ const HomeSection = () => {
           </form>
         </div>
       </div> */}
-      <div>
+      <div id="WhatDo">
         <DoForm />
       </div>
 
